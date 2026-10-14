@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "life-2026-10-14T22-54-56-042Z",
+  "sourceBuiltAt": "2026-10-14T22:54:56.152Z",
+  "packagedAt": "2026-10-14T23:27:09.218Z",
+  "status": "development-preview",
+  "wholeGameComplete": false,
+  "realAI": false,
+  "storage": "browser-local-only",
+  "sourceRuntimeFiles": 38
+}

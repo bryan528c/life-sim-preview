@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="life-preview-release" content="life-2026-10-14T22-54-56-042Z">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ebf0ed">
+  <meta name="description" content="출생부터 마지막 회고까지, 선택과 시간을 기록하는 독립 규칙 기반 생애 게임 개발 기준판.">
+  <title>80억 분의 1 · 비공식 로컬 기준판</title>
+  <link rel="stylesheet" href="./web/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">게임으로 건너뛰기</a>
+  <header class="site-header" hidden>
+    <a class="brand" href="./" aria-label="인생의 지도 홈"><span class="brand-mark" aria-hidden="true">⌁</span><span>인생의 지도<small>개발 기준판 · 독립 규칙</small></span></a>
+    <nav class="header-tools" aria-label="도구">
+      <span id="save-status" class="save-status" aria-live="off">저장 확인 중</span>
+      <button type="button" id="mute-button" data-ui="mute" class="icon-button" aria-label="모든 소리 음소거" aria-pressed="false" title="모든 소리 음소거">♪</button>
+      <button type="button" data-ui="records" class="quiet-button">생애 서재 <span id="record-count" class="count">0</span></button>
+      <button type="button" data-ui="settings" class="icon-button" aria-label="설정" title="설정">⚙</button>
+      <button type="button" data-ui="help" class="quiet-button">도움말</button>
+    </nav>
+  </header>
+  <div id="error-banner" class="error-banner" role="alert" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <main id="main" tabindex="-1"><div class="loading"><span class="eyebrow">LIFE / JOURNEY</span><h1>당신의 다음 삶을 준비합니다.</h1><p>로컬 저장을 확인하는 중입니다.</p></div></main>
+  <footer class="site-footer"><span>검증판 2026-10-14 22:54 UTC</span><span>독립 구현 · 생활 규칙 합성 · 외부 모델 미연결</span><button class="text-button" type="button" data-ui="help">규칙과 구현 범위</button><span>이 브라우저에 자동 저장됩니다.</span></footer>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-notice" class="dialog-notice" role="status" hidden></div><div id="dialog-content"></div></dialog>
+  <input id="import-file" type="file" accept="application/json,.json" hidden aria-label="저장 파일 가져오기">
+  <noscript><p class="error-banner">이 게임에는 JavaScript가 필요합니다. 외부 API나 계정 없이 로컬에서 실행됩니다.</p></noscript>
+  <script type="module" src="./web/app.mjs"></script>
+</body>
+</html>
