@@ -3,8 +3,9 @@ import { COUNTRIES } from '../src/game/world.mjs';
 import { referenceDistribution } from '../src/game/demographics.mjs';
 import {createBirthSequence,renderBirthSelection,createBirthCardCanvas,birthCardText} from './birth-presentation.mjs';
 import { createPlaybackClock, playbackStage, shouldStopPlayback } from './playback-clock.mjs';
+import {birthOptionsFromForm,birthSetupContext} from './birth-setup.mjs';
 import { createRepository, newSession, moveLivesToTrash, restoreLifeFromTrash, mergeSessions } from '../src/game/persistence.mjs';
-import { escape, amount, countryName, birthComparison, yearDurationMs, renderStart, renderLife, renderBirthCertificate, renderSystemsDialog, renderJournalDialog, renderRecords, renderSettings, renderHelp, dialogShell, tr } from './views.mjs';
+import { escape, amount, countryName, birthComparison, renderBirthDistribution, yearDurationMs, renderStart, renderLife, renderBirthCertificate, renderSystemsDialog, renderJournalDialog, renderRecords, renderSettings, renderHelp, dialogShell, tr } from './views.mjs';
 
 const main = document.querySelector('#main');
 const dialog = document.querySelector('#dialog');
@@ -157,6 +158,7 @@ function captureDrafts() {
     const key = form.id || `action:${form.dataset.actionForm}`;
     const checkboxes=[...form.querySelectorAll('input[type=checkbox][name]')],names=new Set(checkboxes.map(input=>input.name));
     drafts.set(key,[...[...new FormData(form).entries()].filter(([name])=>!names.has(name)),...checkboxes.map(input=>[input.name,input.checked])]);
+    if(form.id==='birth-form'&&form.elements.birthYear?.disabled)drafts.get(key).push(['birthYear',form.elements.birthYear.value]);
   }
 }
 function restoreDrafts() {
@@ -172,8 +174,15 @@ function restoreDrafts() {
 function refreshBirthForm({announceChange=false}={}) {
   const form=document.querySelector('#birth-form');if(!form)return;
   const mode=form.elements.mode.value,basis=form.elements.demographicBasis,weighting=form.elements.weighting.value;
+  const yearInput=form.elements.birthYear;
+  yearInput.disabled=mode!=='past';yearInput.required=mode==='past';
+  document.querySelector('#birth-year-field').hidden=mode!=='past';
   const referenceOption=[...basis.options].find(option=>option.value==='reference-2023');referenceOption.disabled=mode!=='present';
   if(mode!=='present'&&basis.value==='reference-2023'){basis.value='synthetic';if(announceChange)announce('과거·미래·시대 무작위 모드에서는 합성 게임 분포를 사용합니다.');}
+  const context=birthSetupContext({mode,birthYear:yearInput.value,weighting,basis:basis.value});
+  document.querySelector('#birth-era-hint').textContent=context.eraHint;
+  document.querySelector('#birth-weighting-hint').textContent=context.weightingHint;
+  for(const [i,value] of ['birth','population'].entries())form.querySelector(`input[name="weighting"][value="${value}"]`).nextElementSibling.textContent=context.labels[i];
   const reference=basis.value==='reference-2023',rows=reference?referenceDistribution(COUNTRIES,weighting):[],supported=new Set(rows.map(row=>row.countryId));
   const country=form.elements.countryId;
   for(const option of country.options)option.disabled=reference&&option.value!=='random'&&!supported.has(option.value);
@@ -183,7 +192,8 @@ function refreshBirthForm({announceChange=false}={}) {
   document.querySelector('#birth-data-info').textContent=reference?`2023 WDI 공개 자료 · ${rows.length}/${COUNTRIES.length}개 국가·지역. 누락 ${COUNTRIES.length-rows.length}개는 제외합니다. ${weighting==='birth'?'인구 × 조출생률 ÷ 1,000으로 추정한 출생 가중치이며 직접 관측 출생수가 아닙니다.':'공개 인구수를 추첨 가중치로 사용합니다.'} 생활·건강·소득·사건은 합성 규칙입니다.`:`합성 게임 분포입니다. ${mode==='present'?'현재 모드에서는 2023 공개 추첨 자료를 선택할 수 있습니다.':'과거·미래·시대 무작위에는 합성 분포를 사용하며 2023 자료를 역사·예측으로 사용하지 않습니다.'} 생활·사건 확률도 합성 규칙입니다.`;
   const row=rows.find(item=>item.countryId===country.value);
   document.querySelector('#birth-country-info').textContent=unavailable?'선택한 국가의 공개 자료가 없어 시작할 수 없습니다. 합성 분포 또는 다른 국가를 선택해 주세요.':row?`${countryName(country.value)}의 공개 자료 추첨 비중 ${(row.share*100).toLocaleString('ko-KR',{maximumFractionDigits:4})}%. 국가를 직접 고르면 추첨 없이 그곳에서 시작합니다.`:'국가명은 실제 지명입니다. 가중 추첨을 선택하면 정해진 자료 분포로 출생 국가를 고릅니다.';
-  document.querySelector('#birth-comparison').innerHTML=birthComparison(country.value,form.elements.comparisonCountry.value,basis.value,{mode,birthYear:form.elements.birthYear?.value?Number(form.elements.birthYear.value):undefined,gender:form.elements.gender?.value});
+  document.querySelector('#birth-distribution').innerHTML=renderBirthDistribution({mode,birthYear:yearInput.value,weighting,basis:basis.value,countryId:country.value});
+  document.querySelector('#birth-comparison').innerHTML=birthComparison(country.value,form.elements.comparisonCountry.value,basis.value,{mode,birthYear:context.year??undefined,gender:form.elements.gender?.value});
 }
 
 function viewModel(){return {busy,readOnly,viewing:Boolean(viewing),tab,journal,minimized,historyFilter,historyLimit,mapAge,graphAge,playing,pauseReason,panels,moreOpen,focusPickerOpen};}
@@ -661,8 +671,7 @@ document.addEventListener('submit', async event => {
   const data = new FormData(form);
   if (form.id === 'birth-form') {
     try {
-      const options = {reflectionStops:data.has('reflectionStops')};
-      for (const [key,value] of data) if(key!=='reflectionStops'&&value!==''&&(value!=='random'||key==='mode')) options[key]=['seed','targetMinutes'].includes(key)?Number(value):value;
+      const options = birthOptionsFromForm(data);
       const life=createLife(options),candidate=clone(session);preserveCurrent(candidate);candidate.current=life;syncEnded(candidate);
       const saved=await commit(candidate,{after:()=>{showStart=false;birthCertificate=true;birthReveal={sequence:createBirthSequence(life,{direct:!!options.countryId,reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches}),index:0};viewing=null;minimized=false;mapAge=null;graphAge=null;tab='education';journal='chronicle';playing=false;pauseReason='birth-certificate';nextFocusId='decision-title';for(const key of Object.keys(panels))panels[key]=false;drafts.clear();window.scrollTo({top:0,behavior:'instant'});}});
       if(saved)runBirthReveal();

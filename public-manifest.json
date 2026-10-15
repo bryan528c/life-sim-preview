@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "reviewed-github-pages-runtime",
-  "release": "life-2026-10-15-readability-public",
+  "release": "life-2026-10-15-settings-public",
   "files": [
     {
       "path": ".nojekyll",
@@ -10,8 +10,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 2817,
-      "sha256": "d33892b664a915d92a6285f6f65699919b755e6cf689814479c8d86b26d1f901"
+      "bytes": 2814,
+      "sha256": "f6e3446e38652bee0f625d304797d9f7a64443db7e4fb8ea0d8f5742cba3730c"
     },
     {
       "path": "README.md",
@@ -20,8 +20,8 @@
     },
     {
       "path": "release.json",
-      "bytes": 309,
-      "sha256": "42dce7dddd094bd6dcf9c2740da07a76fe0c43b521482ab39ce0de2492667f55"
+      "bytes": 306,
+      "sha256": "082633f50472e51c31e7c6f41f6738eac61372c4baf143e8db9678ff18f403a1"
     },
     {
       "path": "src/ai-boundary.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "web/app.mjs",
-      "bytes": 58144,
-      "sha256": "a6dc52588d9c0fd19c56b4d93b9a48b415f66fd75c5d0a2d9315db753feaeae5"
+      "bytes": 58892,
+      "sha256": "cb37f40a80a241f6270639daebd89f67ed65d9d7c791a55b4c3f3c0f5945ab49"
     },
     {
       "path": "web/birth-map.mjs",
@@ -127,6 +127,11 @@
       "path": "web/birth-presentation.mjs",
       "bytes": 9302,
       "sha256": "4c5fd5cc83094bf55535f7886c8f3b41617a8dbe30398e44f96049f32ca9bca1"
+    },
+    {
+      "path": "web/birth-setup.mjs",
+      "bytes": 3617,
+      "sha256": "ddafded69a796b4ba0e7f2cb903fcb8cc6d7e61d11abdd1b66e9441b39636795"
     },
     {
       "path": "web/fonts/Hahmlet[wght].ttf",
@@ -205,8 +210,8 @@
     },
     {
       "path": "web/views.mjs",
-      "bytes": 112231,
-      "sha256": "3d7ff956d6448643e2cf31611662cafe9ec5c2df82a1c655fcfa6594d07f55ed"
+      "bytes": 114470,
+      "sha256": "54cb0aeda0cd849000391addda9c6c5c464e1b507e1cedaea80fbccad5b67137"
     }
   ],
   "excluded": [

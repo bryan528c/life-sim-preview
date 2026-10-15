@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "life-2026-10-15-readability-public",
-  "sourceBuiltAt": "2026-10-15T00:55:39.153Z",
-  "packagedAt": "2026-10-15T00:55:39.195Z",
+  "id": "life-2026-10-15-settings-public",
+  "sourceBuiltAt": "2026-10-15T05:13:56.143Z",
+  "packagedAt": "2026-10-15T05:13:56.193Z",
   "status": "development-preview",
   "wholeGameComplete": false,
   "realAI": false,
   "storage": "browser-local-only",
-  "sourceRuntimeFiles": 38
+  "sourceRuntimeFiles": 39
 }
