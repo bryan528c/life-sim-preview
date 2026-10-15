@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "reviewed-github-pages-runtime",
-  "release": "life-2026-10-14T22-54-56-042Z",
+  "release": "life-2026-10-15-readability-public",
   "files": [
     {
       "path": ".nojekyll",
@@ -10,8 +10,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 2812,
-      "sha256": "b834b602ab3258a927111ffd6c5ac19d10a19b3887032c4840360c9a7d58b47c"
+      "bytes": 2817,
+      "sha256": "d33892b664a915d92a6285f6f65699919b755e6cf689814479c8d86b26d1f901"
     },
     {
       "path": "README.md",
@@ -20,8 +20,8 @@
     },
     {
       "path": "release.json",
-      "bytes": 304,
-      "sha256": "ec0d4dbb213952a4d944551a9b52d08adad1d21fa4322d0f6da93c5e81213432"
+      "bytes": 309,
+      "sha256": "42dce7dddd094bd6dcf9c2740da07a76fe0c43b521482ab39ce0de2492667f55"
     },
     {
       "path": "src/ai-boundary.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "web/app.mjs",
-      "bytes": 57869,
-      "sha256": "7b41b69cfba5722d726a5599169c0217223580a43dc0f490c279e3b6d2e2205b"
+      "bytes": 58144,
+      "sha256": "a6dc52588d9c0fd19c56b4d93b9a48b415f66fd75c5d0a2d9315db753feaeae5"
     },
     {
       "path": "web/birth-map.mjs",
@@ -200,13 +200,13 @@
     },
     {
       "path": "web/styles.css",
-      "bytes": 84378,
-      "sha256": "fbdade368adc3bbca91460c60e4d09fdc1045a040f1f430a50f1d49080437608"
+      "bytes": 89714,
+      "sha256": "e4f404542f38e8878af180ad26664a3b5e647d8be39ae2119b7ca229df188333"
     },
     {
       "path": "web/views.mjs",
-      "bytes": 112143,
-      "sha256": "4dfb38f299e7d602ee918586a1a34043b2c1c03744269d5f24684a14841c8a97"
+      "bytes": 112231,
+      "sha256": "3d7ff956d6448643e2cf31611662cafe9ec5c2df82a1c655fcfa6594d07f55ed"
     }
   ],
   "excluded": [

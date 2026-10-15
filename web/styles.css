@@ -151,3 +151,90 @@ body[data-stage=birth-selection] #main{padding:0;max-width:none;min-height:100dv
  .birth-selection h1{font-size:clamp(42px,13vw,70px)}
  #dialog[data-kind=birth-card]{width:calc(100% - 32px);max-height:calc(100dvh - 32px)}
 }
+
+
+/* Local readability pass, 2026-10-15. Presentation only; product identity remains undecided. */
+body { font-size:16px; line-height:1.75; }
+h1,h2,h3,h4 { letter-spacing:-.025em; }
+.life-brand,.life-age strong,.identity-body h2,.reference-money strong,
+.reference-decision h2,.dialog-context,.finance-heading h2,.ending-panel h2 {
+  font-family:var(--font); letter-spacing:-.025em;
+}
+.life-age strong,.reference-stat strong,.reference-money strong,.detail-stat strong {
+  font-variant-numeric:tabular-nums;
+}
+.identity-body h2 { font-size:22px; line-height:1.4; overflow-wrap:anywhere; }
+.identity-card>header,.reference-decision>header,.dialog-header h2 {
+  font-family:var(--font); font-size:13px; line-height:1.5; letter-spacing:0;
+}
+.dialog-header h2 { font-weight:600; }
+.dialog-header .icon-button { width:44px; min-width:44px; height:44px; line-height:44px; }
+.dialog-context { font-size:24px; line-height:1.5; }
+.reference-decision h2 { font-size:26px; line-height:1.45; }
+.reference-decision p { font-size:15px; line-height:1.8; }
+.reference-decision>header button { min-height:44px; font-size:13px; }
+.choice-content strong { font-size:16px; line-height:1.5; font-weight:600; }
+.choice-content small { font-size:13px; line-height:1.65; }
+.reference-feed-list article { font-size:16px; line-height:1.8; padding:14px 0; gap:10px; }
+.reference-feed-list article>small { font-size:12px; }
+.reference-feed-list .history-entry-text.important-event { font-weight:500; }
+.reference-feed .feed-tools small { font-size:12px; }
+.reference-feed .feed-tools .text-button { font-size:13px; min-height:36px; padding:5px 0; }
+.reference-feed-list .history-mark-action { min-height:40px; padding:7px 12px; font-size:13px; }
+.feed-context,.reference-focus .hint,.reference-country .hint,.reference-survival .hint,
+.reference-map .hint,.family-line small,.cohort-line small,.event-label,.event-source {
+  font-size:13px; line-height:1.7;
+}
+.reference-focus p { font-size:14px; line-height:1.8; }
+.reference-stat,.identity-body dl,.reference-money small { font-size:13px; }
+.life-controls button,.life-more>summary { min-height:44px; height:44px; font-size:12px; }
+.life-more>summary { display:flex; align-items:center; justify-content:center; }
+.life-more nav { top:calc(100% + 6px); }
+.life-more nav button { height:auto; min-height:44px; font-size:14px; }
+.life-toolbar .toolbar-inner { flex-wrap:wrap; gap:10px 14px; }
+.year-progress { font-size:13px; }
+.play-notice { margin:0; padding:10px max(16px,calc((100% - 1352px)/2)); background:var(--surface); border-top:1px solid var(--line); color:var(--teal); font-size:13px; line-height:1.65; }
+.play-notice[hidden] { display:none; }
+.play-notice.error { color:var(--danger); }
+.action-card p,.disabled-reason,.system-intro p,.scope-badge,.dialog-body .hint { font-size:13px; line-height:1.75; }
+.action-card select,.action-card button,.action-card .secondary { font-size:14px; min-height:44px; }
+.action-title,.action-title span { font-size:15px; }
+.action-card .action-cost { font-size:12px!important; }
+label.field { font-size:14px; }
+.hint,.birth-options .hint,.certificate-source-note,.certificate-share small { font-size:13px; line-height:1.7; }
+input,select,textarea { font-size:16px; }
+.primary,.secondary,.danger-button { min-height:44px; font-size:14px; }
+.birth-advanced>summary,.map-data-source>summary,.certificate-source-note>summary { min-height:40px; padding-top:8px; padding-bottom:8px; }
+@media(max-width:800px) {
+  .life-toolbar .toolbar-inner { min-height:0; padding:10px 16px; gap:8px 12px; }
+  .life-age strong { font-size:32px; font-weight:600; }
+  .life-controls { gap:4px; }
+  .life-controls>[data-ui=play],.life-more>summary { min-width:44px; width:44px; }
+  .life-controls>[data-command=nextDecision] { min-width:50px; padding:6px; }
+  .speed-buttons { flex:1; min-width:0; }
+  .speed-buttons button { flex:1; width:auto; min-width:0; padding:5px 1px; font-size:11px; }
+  .life-more { flex:0 0 44px; }
+  .life-more nav { max-height:calc(100dvh - 160px); }
+  .mobile-minibar { position:relative; top:auto; z-index:30; box-shadow:none; padding:10px; flex-wrap:wrap; gap:8px; }
+  .mobile-minibar .mini-stat-list { flex:1 1 160px; gap:8px; }
+  .mobile-minibar .reference-stat { font-size:12px; line-height:1.5; }
+  .mobile-minibar .reference-stat strong { font-size:14px; line-height:1.5; }
+  .mobile-minibar button { height:auto; min-height:44px; font-size:12px; padding:8px 10px; }
+  .mobile-minibar .mini-focus { max-width:none; font-size:12px; white-space:normal; }
+  .mobile-minibar .mini-focus-picker button { min-height:44px; font-size:14px; }
+  .reference-feed .panel-heading { flex-wrap:wrap; align-items:center; gap:8px; }
+  .reference-feed .feed-tools { flex:1; }
+  .reference-feed-list article { grid-template-columns:36px minmax(0,1fr); gap:8px; }
+  .reference-decision>header { gap:6px; }
+  .reference-decision>header>span:nth-child(2) { font-size:12px; }
+  .reference-decision>header button { font-size:12px; }
+  .reference-decision h2 { font-size:24px; }
+  .reference-decision .choice { gap:12px; }
+  .dialog-header h2 { font-size:14px; }
+}
+@media(max-width:360px) {
+  .life-controls { flex-wrap:wrap; }
+  .speed-buttons { order:1; flex-basis:100%; }
+  .speed-buttons button { min-width:36px; }
+  .life-controls>[data-command=nextDecision] { flex:1; }
+}

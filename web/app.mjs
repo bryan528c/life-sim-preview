@@ -124,15 +124,17 @@ function unlockAudio(event) {
 }
 
 function toast(message, error = false) {
-  const node = document.querySelector('#toast');
+  const floating = document.querySelector('#toast');
+  const inline = document.querySelector('#dialog-notice');
+  const node = (dialog.open && inline) || document.querySelector('#play-notice') || floating;
+  if (node !== floating) floating.hidden = true;
   node.textContent = message;
   node.classList.toggle('error', error);
   node.setAttribute('aria-live', error ? 'assertive' : 'polite');
+  node.setAttribute('role', error ? 'alert' : 'status');
   node.hidden = false;
-  const inline = document.querySelector('#dialog-notice');
-  if(dialog.open && inline){inline.hidden=false;inline.textContent=message;inline.classList.toggle('error',error);inline.setAttribute('role',error?'alert':'status');}
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => { node.hidden = true; }, error ? 6500 : 3300);
+  toastTimer = setTimeout(() => { if (node !== inline) node.hidden = true; }, error ? 6500 : 3300);
 }
 function beep() {
   if (!session.preferences.sound || session.preferences.muted || document.hidden || !audioUnlocked) return;
@@ -219,7 +221,10 @@ function render({ capture = true } = {}) {
   document.body.classList.toggle('ui-busy', busy);
   main.setAttribute('aria-busy', String(busy));
   const vm = { busy, readOnly, viewing: Boolean(viewing), tab, journal, minimized, historyFilter, historyLimit, mapAge, graphAge, playing, pauseReason, panels, moreOpen,focusPickerOpen };
+  // Keep the notice and its expiry timer through the final save render.
+  const playNotice = document.getElementById('play-notice');
   main.innerHTML = birthReveal ? renderBirthSelection(birthReveal.sequence,birthReveal.index) : showStart || !activeLife() ? renderStart(session, vm) : birthCertificate ? renderBirthCertificate(activeLife(),session,vm) : renderLife(activeLife(), session, vm);
+  if (playNotice) document.getElementById('play-notice')?.replaceWith(playNotice);
   restoreDrafts();
   refreshBirthForm();
   if (!dialog.open && (focus || nextFocusId)) {
