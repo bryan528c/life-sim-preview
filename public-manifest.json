@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "reviewed-github-pages-runtime",
-  "release": "life-2026-10-15-settings-public",
+  "release": "life-2026-10-15-future-money-public",
   "files": [
     {
       "path": ".nojekyll",
@@ -10,8 +10,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 2814,
-      "sha256": "f6e3446e38652bee0f625d304797d9f7a64443db7e4fb8ea0d8f5742cba3730c"
+      "bytes": 2818,
+      "sha256": "44483495f77d24d25db9ab8a299d6a23cd43c46571182e6689e9815a3fffac1c"
     },
     {
       "path": "README.md",
@@ -20,8 +20,8 @@
     },
     {
       "path": "release.json",
-      "bytes": 306,
-      "sha256": "082633f50472e51c31e7c6f41f6738eac61372c4baf143e8db9678ff18f403a1"
+      "bytes": 310,
+      "sha256": "815d0a52f9bc1fc1e920e2bd70953b97cfe489bc4456232ac47f1fe6edb004f5"
     },
     {
       "path": "src/ai-boundary.mjs",
@@ -61,7 +61,7 @@
     {
       "path": "src/game/engine.mjs",
       "bytes": 80378,
-      "sha256": "ea0174fa7a92a6fb4a1d4ba3a326789b6078a585b1ca379a9dec8a700c7bef16"
+      "sha256": "7fa2bec0217b0df45cffa25f071c5e3d86b237f453d31aee57409848bc17656c"
     },
     {
       "path": "src/game/focus.mjs",
@@ -130,8 +130,8 @@
     },
     {
       "path": "web/birth-setup.mjs",
-      "bytes": 3617,
-      "sha256": "ddafded69a796b4ba0e7f2cb903fcb8cc6d7e61d11abdd1b66e9441b39636795"
+      "bytes": 3756,
+      "sha256": "743bb1081072b41ab675350a96273731a4ec330cf26566af1d568d260fa922d8"
     },
     {
       "path": "web/fonts/Hahmlet[wght].ttf",
@@ -210,8 +210,8 @@
     },
     {
       "path": "web/views.mjs",
-      "bytes": 114470,
-      "sha256": "54cb0aeda0cd849000391addda9c6c5c464e1b507e1cedaea80fbccad5b67137"
+      "bytes": 116246,
+      "sha256": "1dfc82d3ac651047c4eff29473238b4d16c9569385ba8890614b7560cf087892"
     }
   ],
   "excluded": [

@@ -113,7 +113,7 @@ export function createLife(options = {}) {
   assert(['present', 'past', 'future'].includes(mode), '지원하지 않는 세계 모드입니다.');
   assert(['birth', 'population'].includes(weighting), '지원하지 않는 추첨 기준입니다.');
   assert(['synthetic', 'reference-2023'].includes(demographicBasis), '지원하지 않는 출생 자료 기준입니다.');
-  const birthYear = options.birthYear ?? ({ past: 1950, present: 2026, future: 2050 })[mode];
+  const birthYear = options.birthYear ?? ({ past: 1950, present: 2026, future: 2026 })[mode];
   assert(integer(birthYear, 1900, 2200), '출생 연도는 1900~2200 사이여야 합니다.');
   assert(options.name === undefined || text(options.name, 40), '이름은 1~40자여야 합니다.');
   assert(options.lifeId === undefined || text(options.lifeId, 160), '인생 식별자가 올바르지 않습니다.');
