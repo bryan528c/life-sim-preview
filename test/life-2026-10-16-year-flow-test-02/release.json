@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "life-2026-10-16-year-flow-test-02",
+  "sourceBuildId": "life-2026-10-16T02-37-18-153Z",
+  "sourceBuiltAt": "2026-10-16T02:37:18.289Z",
+  "packagedAt": "2026-10-16T02:39:33.581Z",
+  "status": "latest-test-preview",
+  "wholeGameComplete": false,
+  "realAI": false,
+  "storage": "browser-local-only",
+  "sourceRuntimeFiles": 46,
+  "publicPath": "test/life-2026-10-16-year-flow-test-02/",
+  "storageNamespace": "lifemap.baseline.v1.test-20261016-01",
+  "saveCompatibility": {
+    "maxReadableVersion": 10,
+    "yearFlowWriteVersion": 10,
+    "sharedWith": {
+      "path": "test/life-2026-10-16-cumulative-test-01/",
+      "maxReadableSaveVersion": 9
+    },
+    "automaticNamespaceMigration": false,
+    "olderReadersPreserveUnsupportedPrimaryAndBackup": true
+  },
+  "actualPcMobileUiVerified": false,
+  "stableRelease": "life-2026-10-15-future-money-public",
+  "stableCommit": "52fe154e82d4f1ff9df2ae6e66c1dfe630a531a8"
+}

@@ -1,0 +1,7 @@
+import { authoredName } from './identity.mjs';
+export const clamp = (value, min = 0, max = 100) => Math.min(max, Math.max(min, Number.isFinite(value) ? value : min));
+export function random(state) { state.rng = ((state.rng >>> 0) + 0x6D2B79F5) >>> 0; let t = state.rng; t = Math.imul(t ^ t >>> 15, t | 1); t ^= t + Math.imul(t ^ t >>> 7, t | 61); return ((t ^ t >>> 14) >>> 0) / 4294967296; }
+export function pick(state, values) { return values[Math.floor(random(state) * values.length)]; }
+export function log(state, category, title, text, structure = undefined) { const item = {id:`${state.lifeId}:log:${state.history.length}`, age:state.age,year:state.year,category,title,text,source:'rule'}; if(state.flags?.yearFlow)item.moment={version:1,month:state.flags.yearFlow.month}; if(structure) item.structure=structure;state.history.push(item); return item; }
+export function person(state, relation, age) { const names=['하린','민서','서윤','지안','유진','도윤','시우','지호','수현','은우','아린','이안','리안','나린','해온','다온']; state.flags ??= {}; const sequence = state.flags.nextPersonId ?? 0; state.flags.nextPersonId = sequence + 1; const legacyName=pick(state,names);return {id:`${state.lifeId}:person:${sequence}`,name:state.flags.birthIdentity?authoredName(state.countryId,null,state.seed,`person:${sequence}`):legacyName,age,alive:true,relation,closeness:50}; }
+export const money = value => `${Math.round(Number(value)||0).toLocaleString('ko-KR')} G`;
