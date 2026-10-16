@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "life-2026-10-16-cumulative-test-01",
+  "sourceBuildId": "life-2026-10-16T00-58-38-433Z",
+  "sourceBuiltAt": "2026-10-16T00:58:38.551Z",
+  "packagedAt": "2026-10-16T00:59:00.952Z",
+  "status": "latest-test-preview",
+  "wholeGameComplete": false,
+  "realAI": false,
+  "storage": "browser-local-only",
+  "sourceRuntimeFiles": 44,
+  "publicPath": "test/life-2026-10-16-cumulative-test-01/",
+  "storageNamespace": "lifemap.baseline.v1.test-20261016-01",
+  "actualPcMobileUiVerified": false,
+  "stableRelease": "life-2026-10-15-future-money-public",
+  "stableCommit": "52fe154e82d4f1ff9df2ae6e66c1dfe630a531a8"
+}
