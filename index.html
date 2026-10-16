@@ -2,17 +2,18 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="life-preview-release" content="life-2026-10-15-future-money-public">
+  <meta name="life-preview-release" content="life-2026-10-16-scene-variety-stable-01">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ebf0ed">
   <meta name="description" content="출생부터 마지막 회고까지, 선택과 시간을 기록하는 독립 규칙 기반 생애 게임 개발 기준판.">
-  <title>80억 분의 1 · 비공식 로컬 기준판</title>
-  <link rel="stylesheet" href="./web/styles.css">
+  <title>환생게임 · 안정 확인 기준판</title>
+  <link rel="stylesheet" href="./test/life-2026-10-16-scene-variety-test-03/web/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">게임으로 건너뛰기</a>
+  <aside class="test-release-banner" aria-label="기준판과 저장 안내"><strong>환생게임 · 안정 확인 기준판 · 테스트03 기준</strong><span>현재 기준판과 테스트03은 같은 기록을 사용합니다. 이전 기본판의 기록은 별도로 보존됩니다. 게임은 한 탭에서 진행해 주세요.</span><a href="./">저장 선택</a><a href="./archive/life-2026-10-15-future-money-public/">이전 기본판</a></aside>
   <header class="site-header" hidden>
-    <a class="brand" href="./" aria-label="인생의 지도 홈"><span class="brand-mark" aria-hidden="true">⌁</span><span>인생의 지도<small>개발 기준판 · 독립 규칙</small></span></a>
+    <a class="brand" href="./" aria-label="환생게임 홈"><span class="brand-mark" aria-hidden="true">⌁</span><span>환생게임<small>개발 기준판 · 독립 규칙</small></span></a>
     <nav class="header-tools" aria-label="도구">
       <span id="save-status" class="save-status" aria-live="off">저장 확인 중</span>
       <button type="button" id="mute-button" data-ui="mute" class="icon-button" aria-label="모든 소리 음소거" aria-pressed="false" title="모든 소리 음소거">♪</button>
@@ -24,11 +25,11 @@
   <div id="error-banner" class="error-banner" role="alert" hidden></div>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   <div id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
-  <main id="main" tabindex="-1"><div class="loading"><span class="eyebrow">LIFE / JOURNEY</span><h1>당신의 다음 삶을 준비합니다.</h1><p>로컬 저장을 확인하는 중입니다.</p></div></main>
-  <footer class="site-footer"><span>검증판 2026-10-15 08:20 UTC</span><span>독립 구현 · 생활 규칙 합성 · 외부 모델 미연결</span><button class="text-button" type="button" data-ui="help">규칙과 구현 범위</button><span>이 브라우저에 자동 저장됩니다.</span></footer>
+  <main id="main" tabindex="-1"><section class="panel start-panel" aria-labelledby="release-title"><span class="eyebrow">LIFE / JOURNEY</span><h1 id="release-title">어느 기록으로 이어갈까요?</h1><p>기본 주소의 게임이 검증한 테스트03으로 바뀌었습니다. 기록은 자동으로 옮기거나 합치지 않습니다.</p><div class="notice"><strong>현재 기준판 · 테스트03</strong><p>테스트03에서 하던 삶을 그대로 이어갑니다. 기록이 없으면 새 인생을 시작할 수 있습니다.</p><button id="release-current" class="primary" type="button">기준판 열기 · 테스트03 기록</button></div><div class="notice muted"><strong>이전 기본판</strong><p>이전 기본 주소에서 하던 삶과 저장을 원래 버전으로 계속합니다.</p><a class="secondary" href="./archive/life-2026-10-15-future-money-public/">이전 기본판 기록으로 계속하기</a></div><details><summary>이전 기록을 기준판으로 옮기려면</summary><p>이전 기본판에서 정상적으로 기록이 열린 것을 확인한 뒤, 생애 서재의 ‘휴지통을 포함한 전체 백업’으로 JSON 파일을 내려받아 보관하세요.</p><p>이 화면으로 돌아와 기준판을 연 다음 ‘기록 가져오기’에서 그 파일을 직접 선택하세요. 가져오기는 병합이며 같은 삶의 다른 시점은 덮어쓰지 않습니다. 이전 기본판의 원본 저장은 그대로 남습니다.</p><p>기준판의 연중 진행으로 저장된 v10 파일은 이전 기본판(v5)에서 실행할 수 없습니다. 전환 전 파일을 별도로 보관하세요. 오류가 보이면 저장을 지우거나 초기화하지 마세요.</p></details><p id="release-entry-status" role="status">선택하기 전에는 게임 저장을 읽거나 변경하지 않습니다.</p></section></main>
+  <footer class="site-footer"><span>안정 확인 기준판 · 2026-10-16 테스트03 승격</span><span>독립 구현 · 생활 규칙 합성 · 외부 모델 미연결</span><a href="./test/life-2026-10-16-scene-variety-test-03/">기존 테스트03</a><span>전체 게임 완성·모든 기기 검수 완료를 뜻하지 않습니다.</span></footer>
   <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-notice" class="dialog-notice" role="status" hidden></div><div id="dialog-content"></div></dialog>
   <input id="import-file" type="file" accept="application/json,.json" hidden aria-label="저장 파일 가져오기">
   <noscript><p class="error-banner">이 게임에는 JavaScript가 필요합니다. 외부 API나 계정 없이 로컬에서 실행됩니다.</p></noscript>
-  <script type="module" src="./web/app.mjs"></script>
+  <script type="module" src="./web/release-entry.mjs?v=life-2026-10-16-scene-variety-stable-01"></script>
 </body>
 </html>

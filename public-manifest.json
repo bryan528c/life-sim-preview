@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "reviewed-github-pages-runtime",
-  "release": "life-2026-10-15-future-money-public",
+  "release": "life-2026-10-16-scene-variety-stable-01",
   "files": [
     {
       "path": ".nojekyll",
@@ -10,18 +10,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 2818,
-      "sha256": "44483495f77d24d25db9ab8a299d6a23cd43c46571182e6689e9815a3fffac1c"
+      "bytes": 5061,
+      "sha256": "c6fc57378bbd44bf081eeb83ebf631ac4576790179b567b1b334b84e56491248"
     },
     {
       "path": "README.md",
-      "bytes": 1266,
-      "sha256": "9e8c389f6527fc0cadcf7eb8583e61b0f870431156d69e3a17d95972a6eedc86"
+      "bytes": 2845,
+      "sha256": "6c29c8370aac35632bed97abb19ef341b40c12cfcb34566ce28ce3fea127be6f"
     },
     {
       "path": "release.json",
-      "bytes": 310,
-      "sha256": "815d0a52f9bc1fc1e920e2bd70953b97cfe489bc4456232ac47f1fe6edb004f5"
+      "bytes": 1767,
+      "sha256": "31a003c8467dca8a7cf17abd3aeb497ca1456ead26a894f81519399c953b4e40"
     },
     {
       "path": "src/ai-boundary.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "web/app.mjs",
-      "bytes": 58892,
-      "sha256": "cb37f40a80a241f6270639daebd89f67ed65d9d7c791a55b4c3f3c0f5945ab49"
+      "bytes": 320,
+      "sha256": "d688756893b3ac0e017b0b327a8ba4d8308a3e9ae3db437abff7e1e16b392a6e"
     },
     {
       "path": "web/birth-map.mjs",
@@ -204,6 +204,11 @@
       "sha256": "ee583a95c1a3375ac416bccd4b2331fc5d10de146fd52b801d466048888b52f3"
     },
     {
+      "path": "web/release-entry.mjs",
+      "bytes": 1092,
+      "sha256": "16b2309a4d1596493e0f8b84f99763d42c35b2f1ea293a17a1ce00c050ff64e7"
+    },
+    {
       "path": "web/styles.css",
       "bytes": 89714,
       "sha256": "e4f404542f38e8878af180ad26664a3b5e647d8be39ae2119b7ca229df188333"
@@ -214,13 +219,17 @@
       "sha256": "1dfc82d3ac651047c4eff29473238b4d16c9569385ba8890614b7560cf087892"
     }
   ],
+  "runtimeDependency": {
+    "path": "test/life-2026-10-16-scene-variety-test-03/",
+    "commit": "24fa0ead0fc168b370a852f463248771e2fbd4e7",
+    "immutable": true
+  },
   "excluded": [
     "private docs and manuscript",
     "browser profiles and saves",
     "observation evidence",
     "test fixtures and logs",
-    "raw data snapshots",
     "credentials",
-    "local server and build history"
+    "local server"
   ]
 }

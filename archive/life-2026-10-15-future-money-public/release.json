@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "life-2026-10-15-future-money-public",
+  "sourceBuiltAt": "2026-10-15T08:20:14.218Z",
+  "packagedAt": "2026-10-15T08:20:14.301Z",
+  "status": "development-preview",
+  "wholeGameComplete": false,
+  "realAI": false,
+  "storage": "browser-local-only",
+  "sourceRuntimeFiles": 39
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "acquiredAt": "2026-10-14T14:07:01.517Z",
+  "sourceRepository": "https://github.com/google/fonts",
+  "commit": "e9678a5385322c63730122ba464765baad83cfd8",
+  "license": "SIL Open Font License 1.1",
+  "unmodified": true,
+  "systemInstalled": false,
+  "originalGameAssetsCopied": false,
+  "purpose": "Locally bundled upstream typefaces matching families observed in reference CSS. The original website font download was not independently verified.",
+  "copyright": [
+    "Copyright 2020 The Hahmlet Project Authors (https://github.com/hyper-type/hahmlet)",
+    "Copyright 2017 IBM Corp. with Reserved Font Name Plex"
+  ],
+  "files": [
+    {
+      "local": "Hahmlet[wght].ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e9678a5385322c63730122ba464765baad83cfd8/ofl/hahmlet/Hahmlet%5Bwght%5D.ttf",
+      "blob": "f2802e6cb92f7e811d695875fc12a003cf11b7fe",
+      "sha256": "892bffe530255770a7435226154a02f519055ff6bedf64254f37f21d15a59279",
+      "bytes": 3559144
+    },
+    {
+      "local": "IBMPlexSansKR-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e9678a5385322c63730122ba464765baad83cfd8/ofl/ibmplexsanskr/IBMPlexSansKR-Regular.ttf",
+      "blob": "71f8a43b5763be2bc881c6d957c3111bd842d783",
+      "sha256": "53750379270312368cf7641901f43a98dd892e3d9d5798cf25cdc245c85c71c0",
+      "bytes": 2797100
+    },
+    {
+      "local": "IBMPlexSansKR-Medium.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e9678a5385322c63730122ba464765baad83cfd8/ofl/ibmplexsanskr/IBMPlexSansKR-Medium.ttf",
+      "blob": "4f646f9e23a82ec8e8fd2eae4c24ff9446eb2880",
+      "sha256": "4a7130f56ce50bf10f9d383f624e50bad2c80bebc63e51f4269ece2c7d919166",
+      "bytes": 2866736
+    },
+    {
+      "local": "IBMPlexSansKR-SemiBold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e9678a5385322c63730122ba464765baad83cfd8/ofl/ibmplexsanskr/IBMPlexSansKR-SemiBold.ttf",
+      "blob": "860bf04b2e79a1714f3dbeb725bc077620998fc5",
+      "sha256": "823c1956adf56c27c06b062725dfce23f266e4fd1366290f2957c8407482a817",
+      "bytes": 2854744
+    },
+    {
+      "local": "IBMPlexSansKR-Bold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e9678a5385322c63730122ba464765baad83cfd8/ofl/ibmplexsanskr/IBMPlexSansKR-Bold.ttf",
+      "blob": "b2d9d12b0639f4e37ec3387db727a32e54bb1563",
+      "sha256": "9d82a8be5330f6d7b53121262867b402baca672eb69b852928f06d185d357f7d",
+      "bytes": 2875584
+    },
+    {
+      "local": "IBMPlexMono-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e9678a5385322c63730122ba464765baad83cfd8/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+      "blob": "0c9770d5183ba60dc4350d3e011b782a320761ae",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "bytes": 135580
+    },
+    {
+      "local": "OFL-Hahmlet.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/e9678a5385322c63730122ba464765baad83cfd8/ofl/hahmlet/OFL.txt",
+      "blob": "bb50f1948b9890c079cb61c1b0f9b9be1e233487",
+      "sha256": "ddadb10d28a303e3ef3b1f7ec55d3027903b9ec566d2f87d3ee03f3c87c91711",
+      "bytes": 4477
+    },
+    {
+      "local": "OFL-IBM-Plex.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/e9678a5385322c63730122ba464765baad83cfd8/ofl/ibmplexsanskr/OFL.txt",
+      "blob": "c35c4c618fab33da8695177b3a6cefe0810b7b28",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456
+    }
+  ]
+}

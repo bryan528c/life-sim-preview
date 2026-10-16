@@ -1,0 +1,153 @@
+{
+  "id": "natural-earth-v5.1.2",
+  "provider": "Natural Earth",
+  "source": "public-geographic-data",
+  "synthetic": false,
+  "tag": "v5.1.2",
+  "commit": "f1890d9f152c896d250a77557a5751a93d494776",
+  "license": "Public domain",
+  "licenseURL": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "projection": "Plate carree, cropped south of 60 degrees south",
+  "extent": {
+    "west": -180,
+    "east": 180,
+    "south": -60,
+    "north": 90,
+    "width": 624,
+    "height": 264,
+    "paddingX": 14,
+    "paddingY": 8,
+    "scale": 1.6555555555555554
+  },
+  "pointBasis": "ne_50m_admin_0_countries ISO_A2_EH and LABEL_X/LABEL_Y cartographic label positions; not birth coordinates or city positions; missing regions supplemented by unique ne_10m_admin_0_map_units ISO_A2_EH and LABEL_X/Y",
+  "landBasis": "ne_110m_land polygons sampled on a fixed SVG dot grid; no country boundaries",
+  "coveredCountryCount": 248,
+  "missingCountries": [
+    "UM"
+  ],
+  "outsideExtent": [
+    "AQ"
+  ],
+  "dotCount": 4754,
+  "rejectedDuplicateFeatures": [
+    {
+      "id": "AU",
+      "featureId": "IOA"
+    },
+    {
+      "id": "AU",
+      "featureId": "ATC"
+    }
+  ],
+  "unusedReviewInput": "label-points.geojson was examined but not used in runtime assets",
+  "inputs": [
+    {
+      "path": "LICENSE.md",
+      "sourcePath": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/f1890d9f152c896d250a77557a5751a93d494776/LICENSE.md",
+      "bytes": 4636,
+      "sha256": "2631b5b39b6d1acc56de75235109b5af2dbb4b0ac5a127b6f06185977247fd4b"
+    },
+    {
+      "path": "land.geojson",
+      "sourcePath": "geojson/ne_110m_land.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/f1890d9f152c896d250a77557a5751a93d494776/geojson/ne_110m_land.geojson",
+      "bytes": 138160,
+      "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9"
+    },
+    {
+      "path": "countries.geojson",
+      "sourcePath": "geojson/ne_50m_admin_0_countries.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/f1890d9f152c896d250a77557a5751a93d494776/geojson/ne_50m_admin_0_countries.geojson",
+      "bytes": 3083490,
+      "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
+    }
+  ],
+  "supplement": {
+    "source": "data/reference/natural-earth-v5.1.2-map-units/sources.json",
+    "commit": "f1890d9f152c896d250a77557a5751a93d494776",
+    "files": [
+      {
+        "path": "map-units.geojson",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/f1890d9f152c896d250a77557a5751a93d494776/geojson/ne_10m_admin_0_map_units.geojson",
+        "bytes": 13526439,
+        "sha256": "57da82be755f4afccd8f3b14251bb2752f5df1395f47d2d86f817470c4a48862"
+      }
+    ],
+    "added": [
+      {
+        "id": "GP",
+        "featureId": "GLP",
+        "sourceName": "Guadeloupe"
+      },
+      {
+        "id": "BQ",
+        "featureId": "NLY",
+        "sourceName": "Caribbean Netherlands"
+      },
+      {
+        "id": "RE",
+        "featureId": "REU",
+        "sourceName": "Reunion"
+      },
+      {
+        "id": "MQ",
+        "featureId": "MTQ",
+        "sourceName": "Martinique"
+      },
+      {
+        "id": "YT",
+        "featureId": "MYT",
+        "sourceName": "Mayotte"
+      },
+      {
+        "id": "BV",
+        "featureId": "BVT",
+        "sourceName": "Bouvet Island"
+      },
+      {
+        "id": "SJ",
+        "featureId": "NSV",
+        "sourceName": "Svalbard"
+      },
+      {
+        "id": "GI",
+        "featureId": "GIB",
+        "sourceName": "Gibraltar"
+      },
+      {
+        "id": "CC",
+        "featureId": "CCK",
+        "sourceName": "Cocos (Keeling) Islands"
+      },
+      {
+        "id": "CX",
+        "featureId": "CXR",
+        "sourceName": "Christmas Island"
+      },
+      {
+        "id": "TK",
+        "featureId": "TKL",
+        "sourceName": "Tokelau"
+      },
+      {
+        "id": "GF",
+        "featureId": "GUF",
+        "sourceName": "French Guiana"
+      }
+    ],
+    "policy": "Unique ISO_A2_EH matches, LABEL_X/Y preserved exactly. Cartographic region label, not every island or precise birthplace. SJ source labels Svalbard; UM has no unique group match and remains unavailable."
+  },
+  "generator": "scripts/prepare-birth-map.mjs",
+  "generatorSha256": "d4804711019c489ed67f2ffef3a8846ebd4b2e99a27622f8c912ea96ce1853e8",
+  "files": [
+    {
+      "path": "map-data.mjs",
+      "sha256": "21774b342dee63018eb6577e3ef3bd988cb3c3ce8901c856ed27ac86e01b15f6"
+    },
+    {
+      "path": "LICENSE-Natural-Earth.txt",
+      "sha256": "2631b5b39b6d1acc56de75235109b5af2dbb4b0ac5a127b6f06185977247fd4b"
+    }
+  ]
+}
