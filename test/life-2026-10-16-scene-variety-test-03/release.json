@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "life-2026-10-16-scene-variety-test-03",
+  "sourceBuildId": "life-2026-10-16T05-07-32-629Z",
+  "sourceBuiltAt": "2026-10-16T05:07:32.771Z",
+  "packagedAt": "2026-10-16T05:12:36.665Z",
+  "status": "latest-test-preview",
+  "wholeGameComplete": false,
+  "realAI": false,
+  "storage": "browser-local-only",
+  "sourceRuntimeFiles": 46,
+  "publicPath": "test/life-2026-10-16-scene-variety-test-03/",
+  "storageNamespace": "lifemap.baseline.v1.test-20261016-scene-variety-03",
+  "saveCompatibility": {
+    "maxReadableVersion": 10,
+    "yearFlowWriteVersion": 10,
+    "sharedWith": null,
+    "automaticNamespaceMigration": false,
+    "olderReadersPreserveUnsupportedPrimaryAndBackup": true
+  },
+  "actualPcMobileUiVerified": false,
+  "stableRelease": "life-2026-10-15-future-money-public",
+  "stableCommit": "52fe154e82d4f1ff9df2ae6e66c1dfe630a531a8",
+  "previewScope": "scene-variety-and-context",
+  "previousV10Preview": {
+    "path": "test/life-2026-10-16-year-flow-test-02/",
+    "maxReadableSaveVersion": 10,
+    "sharesStorage": false,
+    "newEpisodeContinuationInOlderV10": "may-cancel"
+  }
+}

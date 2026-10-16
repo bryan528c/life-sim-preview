@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "kind": "reviewed-github-pages-runtime",
+  "release": "life-2026-10-16-scene-variety-test-03",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3595,
+      "sha256": "8759dd000cfa5d3112d1f0469ddcb2546391bf964fd8b747ada038bb635dfbd5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4992,
+      "sha256": "d32a3a724b507cd482df83373a3b1a90677a94ab3ec75d454302dd769235f849"
+    },
+    {
+      "path": "release.json",
+      "bytes": 1126,
+      "sha256": "29861e5a877d5c4367f9d4628bd8fdcf854dccc1b5ca350490c7ca954c315a53"
+    },
+    {
+      "path": "src/ai-boundary.mjs",
+      "bytes": 4920,
+      "sha256": "e7de73c82a19e1e0a179663f248706c919a4b2e6aa8e999eb674097ee0a02e2a"
+    },
+    {
+      "path": "src/game/adult-life.mjs",
+      "bytes": 13068,
+      "sha256": "410c765ff2be27849b68440292927ab8cb598cf3e1320a07aeb58c808303da8b"
+    },
+    {
+      "path": "src/game/advisor.mjs",
+      "bytes": 1786,
+      "sha256": "e29e5bef8f15301cb9e68f842fe9ae8dab291e7665c947b9c76bb6f77e9c8c07"
+    },
+    {
+      "path": "src/game/career-interest.mjs",
+      "bytes": 5423,
+      "sha256": "d68bcec3e60a4b0768b7477b4eb4d9bb8db99a39a346a3ff5d7d7171c7440ae8"
+    },
+    {
+      "path": "src/game/comparison.mjs",
+      "bytes": 5870,
+      "sha256": "360295b4a1c53ab44af32cadbffff4f4c94105825c9391b1066ccd4c005b1344"
+    },
+    {
+      "path": "src/game/content.mjs",
+      "bytes": 94573,
+      "sha256": "02d9ef175ebe6df88f209fd7a54a003d2f83fd839b42b8c55be02623e69cf1d6"
+    },
+    {
+      "path": "src/game/demographics.mjs",
+      "bytes": 23074,
+      "sha256": "513af3f669a65cdbe38b83fe3a15b8acf1abc9ae3e6a2915e0cfd56c9c0d8c4a"
+    },
+    {
+      "path": "src/game/engine.mjs",
+      "bytes": 82316,
+      "sha256": "a3fc4aff8378c36f503a7e6fbd24aea2e6b581e9bedeeacf01ac9a0154aa567a"
+    },
+    {
+      "path": "src/game/focus.mjs",
+      "bytes": 4055,
+      "sha256": "2f1e87c027071d3a11bdb830e119a21e728f941aeeb94c276099ff427ab01e59"
+    },
+    {
+      "path": "src/game/identity.mjs",
+      "bytes": 7417,
+      "sha256": "205181087819346cb804fed68d2a692817c894b2fa8b508a18a759be87fe92a3"
+    },
+    {
+      "path": "src/game/persistence.mjs",
+      "bytes": 27827,
+      "sha256": "2e74d12d951017cd02b26d7a3167cf80dc8b80b65fe252a57a805e26d7055b1c"
+    },
+    {
+      "path": "src/game/public-country-data.mjs",
+      "bytes": 24227,
+      "sha256": "f70d3c7a656ad8a15a56989285b73fc4849038bb0d6d416470ac8c9ebe5ffd24"
+    },
+    {
+      "path": "src/game/reflection.mjs",
+      "bytes": 8123,
+      "sha256": "981c31ba28ab81a5477aaa746f84d8cfcd13305f75621814696bed6135656a03"
+    },
+    {
+      "path": "src/game/relationship-memory.mjs",
+      "bytes": 4901,
+      "sha256": "5acab41b455a2ca9e6a2c590fca741bc4be9a991a04ba6ee98c50a44d8e706cb"
+    },
+    {
+      "path": "src/game/school.mjs",
+      "bytes": 14768,
+      "sha256": "fbea67f56de64d4a1e90d073da8bc5c97650d5a3b1f242880a7764eccb8691fc"
+    },
+    {
+      "path": "src/game/shared.mjs",
+      "bytes": 1498,
+      "sha256": "dd47ed93f858e092390ec54c50c951fe8274ace45df11f12bba775123360612c"
+    },
+    {
+      "path": "src/game/systems.mjs",
+      "bytes": 94122,
+      "sha256": "73785d45eb64ce9eea9760d603f6b74cb1ac8af344ddf8750434304e4a8e11bc"
+    },
+    {
+      "path": "src/game/world.mjs",
+      "bytes": 12401,
+      "sha256": "fd2d9475e03da123f0f41fc1da699b3f439834fe8388801103c3117852ae76f9"
+    },
+    {
+      "path": "src/game/year-flow.mjs",
+      "bytes": 9176,
+      "sha256": "45e6afb13cc5308b7c8b0c88d2f4cb7fcc83a705319573ca4376c5dd990a7dde"
+    },
+    {
+      "path": "src/game/year-scenes.mjs",
+      "bytes": 21602,
+      "sha256": "e13096bd531192994ded44a9ad8b9d387e6cbd6a381e9c2b0be3697803dffd5f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1652,
+      "sha256": "bdf6f9229841ff0e3989b29c63eceb8b671db9b840f60800d3618585e6c420b6"
+    },
+    {
+      "path": "web/action-form.mjs",
+      "bytes": 1187,
+      "sha256": "e96c6a2e3cdf1d806caf95accc521aad18233dd6451827257e912485bb33a225"
+    },
+    {
+      "path": "web/app.mjs",
+      "bytes": 60104,
+      "sha256": "6644e8a2fb81e52fc470d480e3200c2120a3c0c8e54e159f55527a3e7c096c03"
+    },
+    {
+      "path": "web/birth-map.mjs",
+      "bytes": 3378,
+      "sha256": "ade1c0e16cd26291cf7fb4c8fea85949d4405d27acdc6fbf69bdfba51339f67a"
+    },
+    {
+      "path": "web/birth-presentation.mjs",
+      "bytes": 9298,
+      "sha256": "494f7d6eaed18432aae839e3778e587f1ea506e05b27eadcc6484c64181422bb"
+    },
+    {
+      "path": "web/birth-setup.mjs",
+      "bytes": 3756,
+      "sha256": "743bb1081072b41ab675350a96273731a4ec330cf26566af1d568d260fa922d8"
+    },
+    {
+      "path": "web/career-presentation.mjs",
+      "bytes": 7118,
+      "sha256": "f8bf3c8d588dce34680a7b1ac9bdcd66b4258567b8620991f083e4fdf69278e6"
+    },
+    {
+      "path": "web/decision-presentation.mjs",
+      "bytes": 4776,
+      "sha256": "87b829a70a5474981127cf20a243b33438a402f6e2f4d678c576e053f6f63c16"
+    },
+    {
+      "path": "web/fonts/Hahmlet[wght].ttf",
+      "bytes": 3559144,
+      "sha256": "892bffe530255770a7435226154a02f519055ff6bedf64254f37f21d15a59279"
+    },
+    {
+      "path": "web/fonts/IBMPlexMono-Regular.ttf",
+      "bytes": 135580,
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+    },
+    {
+      "path": "web/fonts/IBMPlexSansKR-Bold.ttf",
+      "bytes": 2875584,
+      "sha256": "9d82a8be5330f6d7b53121262867b402baca672eb69b852928f06d185d357f7d"
+    },
+    {
+      "path": "web/fonts/IBMPlexSansKR-Medium.ttf",
+      "bytes": 2866736,
+      "sha256": "4a7130f56ce50bf10f9d383f624e50bad2c80bebc63e51f4269ece2c7d919166"
+    },
+    {
+      "path": "web/fonts/IBMPlexSansKR-Regular.ttf",
+      "bytes": 2797100,
+      "sha256": "53750379270312368cf7641901f43a98dd892e3d9d5798cf25cdc245c85c71c0"
+    },
+    {
+      "path": "web/fonts/IBMPlexSansKR-SemiBold.ttf",
+      "bytes": 2854744,
+      "sha256": "823c1956adf56c27c06b062725dfce23f266e4fd1366290f2957c8407482a817"
+    },
+    {
+      "path": "web/fonts/manifest.json",
+      "bytes": 3524,
+      "sha256": "fefed69a2efc0edd23a85b77d4ffa1644af231e97583f04c67e0c75a8f6054a3"
+    },
+    {
+      "path": "web/fonts/OFL-Hahmlet.txt",
+      "bytes": 4477,
+      "sha256": "ddadb10d28a303e3ef3b1f7ec55d3027903b9ec566d2f87d3ee03f3c87c91711"
+    },
+    {
+      "path": "web/fonts/OFL-IBM-Plex.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "web/geography/LICENSE-Natural-Earth.txt",
+      "bytes": 4636,
+      "sha256": "2631b5b39b6d1acc56de75235109b5af2dbb4b0ac5a127b6f06185977247fd4b"
+    },
+    {
+      "path": "web/geography/manifest.json",
+      "bytes": 4705,
+      "sha256": "001cf4caf9dcf5dc95c08b0e32d883480b89264753b4e188704d359141218921"
+    },
+    {
+      "path": "web/geography/map-data.mjs",
+      "bytes": 81936,
+      "sha256": "21774b342dee63018eb6577e3ef3bd988cb3c3ce8901c856ed27ac86e01b15f6"
+    },
+    {
+      "path": "web/learning-presentation.mjs",
+      "bytes": 6138,
+      "sha256": "5a2fffb1ba29c665cedbfad1c9f0ee1f52d5eeef01dcc2c64f9e91a9f8bf7ff5"
+    },
+    {
+      "path": "web/pixel-scenes.mjs",
+      "bytes": 24652,
+      "sha256": "b231aad8a12106f7f44a97577c4916376e8c0d77f9c5cfebc00cc452056792ea"
+    },
+    {
+      "path": "web/playback-clock.mjs",
+      "bytes": 2316,
+      "sha256": "85bfbd69de885d0fd6b084069ddcb3d002abce4fd7fdd7ab26e6768ae6e9ee5a"
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 93909,
+      "sha256": "a9d026e9345b3534a8268284877fac92443ddec70746b9739d10f5477bf44b05"
+    },
+    {
+      "path": "web/views.mjs",
+      "bytes": 121621,
+      "sha256": "fb1bf6d1dca7a3f08efe25ef1d678d52a20665d448cdfef0f1a24c97043a023d"
+    }
+  ],
+  "excluded": [
+    "private docs and manuscript",
+    "browser profiles and saves",
+    "observation evidence",
+    "test fixtures and logs",
+    "raw data snapshots",
+    "credentials",
+    "local server and build history"
+  ]
+}
